@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NowLine</title>
+<meta name="description" content="NowLine: a quick view of your Google Calendar and Google Tasks for Windows.">
+<style>
+:root{--bg:#F9F9FB;--surface:#FFFFFF;--text:#1B1B1F;--muted:#55555D;--line:#E4E4EA;--accent:#2F5FC4;--now:#D93025}
+@media (prefers-color-scheme: dark){:root{--bg:#141418;--surface:#1D1D23;--text:#ECECF1;--muted:#A6A6B0;--line:#2E2E36;--accent:#8AA8FF;--now:#FF6B5E}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;line-height:1.6}
+main{max-width:720px;margin:0 auto;padding:56px 16px 40px}
+.logo{display:flex;align-items:center;gap:12px;font-size:32px;font-weight:700;letter-spacing:-0.01em}
+.mark{position:relative;width:44px;height:44px}
+.mark span{position:absolute;left:0;right:0;top:20px;border-top:3px solid var(--now)}
+.mark i{position:absolute;left:-2px;top:15px;width:13px;height:13px;border-radius:50%;background:var(--now)}
+.tag{font-size:20px;color:var(--muted);margin:8px 0 32px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin-bottom:20px}
+ul{padding-left:20px;margin:0}
+li{margin:6px 0}
+.status{display:inline-block;padding:4px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-size:14px;color:var(--muted)}
+a{color:var(--accent)}
+footer{max-width:720px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <div class="logo"><div class="mark" aria-hidden="true"><span></span><i></i></div>NowLine</div>
+  <p class="tag">Your day at a glance on Windows. Press a shortcut, see what's next, press Esc and get back to work.</p>
+
+  <div class="card">
+    <ul>
+      <li>See today's events from <b>all your Google accounts and calendars</b> in one timeline.</li>
+      <li>Switch to an agenda list or a full-week view with one key.</li>
+      <li>Join a meeting, see who's coming and read the details without opening a browser.</li>
+      <li>Your <b>Google Tasks</b> that are due today or overdue, next to your events.</li>
+      <li>A reminder a few minutes before each meeting, with a Join button.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <b>Private by design.</b> NowLine only <i>reads</i> your calendars and tasks. Your data stays on your computer and is never sent to us or anyone else. <a href="privacy.html">Privacy policy</a>
+  </div>
+
+  <span class="status">In development. Coming to the Microsoft Store.</span>
+</main>
+<footer>
+  <p><a href="privacy.html">Privacy policy</a> · Contact: <a href="mailto:einhorn.tom@gmail.com">einhorn.tom@gmail.com</a></p>
+  <p>NowLine is an independent app and is not affiliated with or endorsed by Google. Google Calendar and Google Tasks are trademarks of Google LLC.</p>
+</footer>
+</body>
+</html>
